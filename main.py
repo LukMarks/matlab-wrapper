@@ -1,9 +1,12 @@
+from curses import wrapper
+
 from pydantic import TypeAdapter
 
 from configuration.ode_configuration import OdeConfiguration
 import sys
 import json
 
+from matlab import MatlabWrapper
 
 
 def set_ode_configuration(configuration_path: str) -> OdeConfiguration:
@@ -19,6 +22,4 @@ def set_ode_configuration(configuration_path: str) -> OdeConfiguration:
 if __name__ == '__main__':
 
     configuration = set_ode_configuration(sys.argv[1])
-
-
-
+    matlab_wrappler = MatlabWrapper(configuration)
