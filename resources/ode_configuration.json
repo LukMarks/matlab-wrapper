@@ -1,0 +1,9 @@
+{
+  "function_path": "/home/lucas/Projects/matlab_wrapper/equation.m",
+  "solver_engine": "octave",
+  "post_processing": {
+    "save": true,
+    "result_file_path": "/home/lucas/Projects/matlab_wrapper/result",
+    "show_plot": true
+  }
+}
